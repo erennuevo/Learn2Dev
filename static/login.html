@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueMart — Log In</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f0f4ff;
+      color: #222;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .login-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .login-card {
+      background: #fff;
+      border: 1px solid #dde3f0;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      padding: 48px 40px 40px;
+      box-shadow: 0 2px 12px rgba(26, 86, 219, 0.07);
+    }
+
+    .login-card h1 {
+      text-align: center;
+      color: #1a56db;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #c5cfe8;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .form-group input:focus {
+      border-color: #1a56db;
+    }
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+      padding: 11px;
+      background-color: #1a56db;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.15s;
+    }
+
+    .btn-primary:hover {
+      background-color: #1648c0;
+    }
+
+    .login-links {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #555;
+    }
+
+    .login-links a {
+      color: #1a56db;
+      text-decoration: underline;
+    }
+
+    .login-links p {
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-wrapper">
+    <div class="login-card">
+
+      <h1>Log In</h1>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Password" required />
+        </div>
+        <button type="submit" class="btn-primary">Log in</button>
+      </form>
+
+      <div class="login-links">
+        <a href="#">Forgot your password?</a>
+        <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
