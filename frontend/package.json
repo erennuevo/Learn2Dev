@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "backend": "cd ../backend && python manage.py migrate && python manage.py runserver",
     "frontend": "vite",
-    "start": "concurrently -n \"DJANGO,REACT\" -c \"green,blue\" \"npm run backend\" \"npm run frontend\""
+    "start": "concurrently -n \"DJANGO,REACT\" -c \"green,blue\" \"npm run backend\" \"npm run frontend\"",
+    "deploy": "npm install && npm run build"
   },
   "dependencies": {
     "axios": "^1.14.0",
